@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-containerinstance" %}
-{% set version = "9.2.0" %}
+{% set version = "10.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/azure-mgmt-containerinstance-{{ version }}.zip
-  sha256: deb125554bdb1aa17df69a596a7514af0146b420176a4db384c54e77a9fd6e46
+  sha256: 4c31ab0bb60ed396306bcb8420daaac385b16a0eb96a49485304bed9a54c1f00
 
 build:
   number: 0
@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - azure-common >=1.1,<2.0
-    - azure-mgmt-core >=1.3.0,<2.0.0
-    - msrest >=0.6.21
+    - azure-mgmt-core >=1.3.2,<2.0.0
+    - msrest >=0.7.1
 
 test:
   imports:
