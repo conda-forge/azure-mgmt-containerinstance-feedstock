@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-containerinstance" %}
-{% set version = "10.0.0" %}
+{% set version = "10.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/azure-mgmt-containerinstance-{{ version }}.zip
-  sha256: 4c31ab0bb60ed396306bcb8420daaac385b16a0eb96a49485304bed9a54c1f00
+  sha256: 78d437adb28574f448c838ed5f01f9ced378196098061deb59d9f7031704c17e
 
 build:
   number: 0
