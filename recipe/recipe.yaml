@@ -23,7 +23,6 @@ requirements:
     - pip
     - setuptools
   run:
-    # bumping to 3.8 to avoid typing-extensions
     - python >=${{ python_min }}
     - isodate <1.0.0,>=0.6.1
     - azure-common >=1.1,<2.dev0
