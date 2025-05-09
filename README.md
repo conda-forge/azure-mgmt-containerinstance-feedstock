@@ -18,7 +18,6 @@ This is the Microsoft Azure Container Instance Client Library.
 Azure Resource Manager (ARM) is the next generation of management APIs that
 replace the old Azure Service Management (ASM).
 
-
 Current build status
 ====================
 
