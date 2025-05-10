@@ -41,14 +41,14 @@ Current release info
 Installing azure-mgmt-containerinstance
 =======================================
 
-Installing `azure-mgmt-containerinstance` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `azure-mgmt-containerinstance` from the `conda-forge/label/azure-mgmt-containerinstance_rc` channel can be achieved by adding `conda-forge/label/azure-mgmt-containerinstance_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/azure-mgmt-containerinstance_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `azure-mgmt-containerinstance` can be installed with `conda`:
+Once the `conda-forge/label/azure-mgmt-containerinstance_rc` channel has been enabled, `azure-mgmt-containerinstance` can be installed with `conda`:
 
 ```
 conda install azure-mgmt-containerinstance
@@ -63,26 +63,26 @@ mamba install azure-mgmt-containerinstance
 It is possible to list all of the versions of `azure-mgmt-containerinstance` available on your platform with `conda`:
 
 ```
-conda search azure-mgmt-containerinstance --channel conda-forge
+conda search azure-mgmt-containerinstance --channel conda-forge/label/azure-mgmt-containerinstance_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search azure-mgmt-containerinstance --channel conda-forge
+mamba search azure-mgmt-containerinstance --channel conda-forge/label/azure-mgmt-containerinstance_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search azure-mgmt-containerinstance --channel conda-forge
+mamba repoquery search azure-mgmt-containerinstance --channel conda-forge/label/azure-mgmt-containerinstance_rc
 
 # List packages depending on `azure-mgmt-containerinstance`:
-mamba repoquery whoneeds azure-mgmt-containerinstance --channel conda-forge
+mamba repoquery whoneeds azure-mgmt-containerinstance --channel conda-forge/label/azure-mgmt-containerinstance_rc
 
 # List dependencies of `azure-mgmt-containerinstance`:
-mamba repoquery depends azure-mgmt-containerinstance --channel conda-forge
+mamba repoquery depends azure-mgmt-containerinstance --channel conda-forge/label/azure-mgmt-containerinstance_rc
 ```
 
 
@@ -152,5 +152,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@janjagusch](https://github.com/janjagusch/)
 * [@xylar](https://github.com/xylar/)
 
