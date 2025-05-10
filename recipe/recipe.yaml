@@ -4,12 +4,13 @@ context:
   name: azure-mgmt-containerinstance
   version: 10.2.0b1
 
+
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-containerinstance-${{ version }}.zip
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure_mgmt_containerinstance-${{ version }}.tar.gz
   sha256: bf4bb77bd6681270dd0a733aa3a7c3ecdfacba8e616d3a8c3b98cce9c48cc7c0
 
 build:
