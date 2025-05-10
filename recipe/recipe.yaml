@@ -4,7 +4,6 @@ context:
   name: azure-mgmt-containerinstance
   version: 10.2.0b1
 
-
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
