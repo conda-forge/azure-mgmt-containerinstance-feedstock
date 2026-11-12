@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: azure-mgmt-containerinstance
-  version: 10.1.0
+  version: "11.0.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-containerinstance-${{ version }}.zip
-  sha256: 78d437adb28574f448c838ed5f01f9ced378196098061deb59d9f7031704c17e
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 9b3ccb0e4b4a2bbd05bbc333dce3a8295f46a46ed65b1637649b7fbaaf44bc86
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
